@@ -413,8 +413,128 @@ justify-content: center;
     color: var(--colorPrincipal);
 }
 
-
 /* fin blog main */
+
+/* inicio menu main */
+
+ .main_menu{
+    background-color: var(--colorSecundario);
+    color: white;
+}
+
+.main_menu h2 {
+    color: white;
+}
+
+.menu_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.menu_container aside {
+    display: flex;
+    flex-direction: column;
+    max-width: 100%;
+    padding: 0 3rem;
+}
+
+.menu_options{
+    display: flex;
+    flex-direction: column;
+}
+
+.today_offer{
+    margin: 3rem 0;
+}
+
+.today_offer .underline{
+    position: relative;
+    margin: 1rem 0;
+    width: 3.750rem;
+    font-weight: 700;
+}
+
+.today_offer .underline hr{
+
+    width: 100%;
+    border-color: var(--colorPrincipal);
+}
+
+.today_offer h3{
+    font-weight: 700;
+}
+
+.today_offer p{
+    color: rgb(203, 203, 203);
+    line-height: 1.5rem;
+}
+
+.menu_options a{
+    text-decoration: none;
+    color: white;
+    display: block;
+    padding: 1rem;
+}
+
+.a_active{
+    background-color: var(--colorPrincipal);
+    border-radius: 0.375rem;
+}
+
+.menu_item_container{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 3rem;
+    padding: 0 4rem;
+}
+
+.menu_item_container article{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.menu_item_container article figure{
+    width: 100%;
+    height: auto;
+}
+
+.menu_item_container article:last-child{
+    margin-bottom: 8rem;
+}
+
+.item_description{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 1.5rem;
+}
+
+.item_description_title{
+    display: flex;
+    justify-content: space-between;
+    font-weight: 700;
+    font-size: 1rem;
+}
+
+.item_description_title .price{
+    color: var(--colorPrincipal);
+    font-size: 1rem;
+}
+
+.item_description p{
+    font-size: 0.8rem;
+}
+
+.item_description .boton_read_more{
+    margin-top: 0rem;
+}
+
+/* fin menu main */
 
 /* mediaqueries */
 @media(min-width: 37.500rem){
@@ -471,6 +591,31 @@ justify-content: center;
     }
     .container_blog .container_blog-article h3 {
         min-height: 2rem;
+    }
+
+    .menu_container{
+        flex-direction: row;
+        height: 100vh
+    }
+    .menu_item_container{
+        width: 70%;
+        gap: 2rem;
+        padding: 0 5rem;
+    }
+    
+    .menu_item_container article{
+        flex-direction: row;
+    }
+    
+    .menu_item_container article figure{
+        width: 25%;
+    }
+    
+    .item_description{
+        width: 70%;
+    }
+    .menu_container aside {
+        max-width: 30%;
     }
 }
 
