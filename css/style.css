@@ -595,7 +595,8 @@ justify-content: center;
 
     .menu_container{
         flex-direction: row;
-        height: 100vh
+        align-items: flex-start;
+        height: 100vh;
     }
     .menu_item_container{
         width: 70%;
